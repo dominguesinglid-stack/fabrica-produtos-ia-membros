@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, CheckCircle, Lock, PlayCircle } from "lucide-react";
 import { getLessonsByModule, getModule } from "@/lib/data";
 
-export default function ModulePage({ params }: { params: { id: string } }) {
+export default function ModulePage({ params }: any) {
   const module = getModule(params.id);
   const lessons = getLessonsByModule(params.id);
   if (!module) return <main className="p-10 text-white">Módulo não encontrado.</main>;
