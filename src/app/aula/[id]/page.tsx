@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ArrowLeft, Check, Clipboard, Copy } from "lucide-react";
 import { getLesson } from "@/lib/data";
 
-export default function LessonPage({ params }: { params: { id: string } }) {
+export default function LessonPage({ params }: any) {
   const lesson = getLesson(params.id);
   const [copied, setCopied] = useState(false);
   if (!lesson) return <main className="p-10 text-white">Aula não encontrada.</main>;
