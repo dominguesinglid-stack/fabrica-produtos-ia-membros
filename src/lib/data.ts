@@ -328,8 +328,88 @@ Depois crie 10 promessas fortes para usar em uma landing page.`,
       "Uma boa promessa não precisa ser exagerada. Ela precisa ser clara, específica e desejável.",
 
     nextAction:
-      "Na próxima aula, vamos analisar concorrentes para encontrar ângulos de diferenciação.",
+  "Na próxima aula, vamos analisar concorrentes para encontrar ângulos de diferenciação.",
   },
+
+{
+id: "4",
+moduleId: "1",
+title: "Análise de Mercado Inteligente",
+subtitle: "Descubra se existe demanda real antes de investir tempo na construção.",
+duration: "18 min",
+status: "available",
+
+objective:
+"Aprender a analisar mercados, concorrentes e oportunidades para validar uma ideia antes da execução.",
+
+concept:
+"Você não precisa inventar algo novo. Você precisa encontrar algo que já funciona e melhorar. Mercados com concorrência normalmente são mercados onde existe dinheiro circulando.",
+
+contentSections: [
+{
+title: "O mercado deixa pistas",
+content:
+"Todo mercado deixa sinais claros de demanda. Produtos sendo vendidos, anúncios rodando, influenciadores falando sobre o tema e concorrentes crescendo são evidências de que existe dinheiro naquele nicho."
+},
+{
+title: "Concorrência não é inimiga",
+content:
+"Muita gente evita mercados competitivos. Isso é um erro. Concorrência geralmente significa validação. O segredo é encontrar um posicionamento melhor ou um problema específico ainda não resolvido."
+},
+{
+title: "Onde encontrar oportunidades",
+content:
+"As melhores oportunidades costumam aparecer nas reclamações dos clientes. Leia comentários, avaliações negativas e fóruns. Ali estão os problemas que ainda não foram resolvidos."
+}
+],
+
+frameworkTitle: "Framework M.C.D.",
+frameworkDescription:
+"Use este método para analisar qualquer mercado.",
+
+framework: [
+"Mercado: existe demanda comprovada?",
+"Concorrência: quem já vende essa solução?",
+"Demanda: há pessoas procurando resolver esse problema?",
+"Diferencial: como você pode ser melhor ou diferente?"
+],
+
+promptTitle: "Scanner de Mercado",
+
+prompt: `Analise o mercado de [NICHO].
+
+Identifique:
+
+- Principais concorrentes
+- Produtos existentes
+- Faixas de preço
+- Principais reclamações dos clientes
+- Oportunidades não exploradas
+- Tendências do mercado
+
+Apresente também uma análise SWOT resumida.`,
+
+example:
+"No mercado de cursos de IA existem centenas de produtos. Porém poucos ensinam a criar produtos digitais completos do zero. Isso pode ser um diferencial competitivo.",
+
+exercise:
+"Mapeie 10 concorrentes do seu nicho e registre os pontos fortes, pontos fracos e oportunidades identificadas.",
+
+checklist: [
+"Mapeei os concorrentes",
+"Identifiquei faixas de preço",
+"Encontrei reclamações recorrentes",
+"Descobri oportunidades de diferenciação",
+"Validei a existência de demanda"
+],
+
+proTip:
+"Mercado sem concorrência pode significar ausência de oportunidade. Mercado com concorrência normalmente indica validação.",
+
+nextAction:
+"Na próxima aula você vai descobrir qual nicho possui a melhor combinação entre interesse pessoal e potencial de mercado."
+},
+
 ];
 
 export function getModule(id: string) {
