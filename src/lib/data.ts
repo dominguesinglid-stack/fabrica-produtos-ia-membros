@@ -678,6 +678,56 @@ nextAction:
 "Parabéns. Você concluiu o Módulo 1. Agora é hora de transformar sua oportunidade validada em um produto digital estruturado no Módulo 2."
 },
 
+{
+id: "8",
+moduleId: "2",
+title: "Definindo o Formato do Produto",
+duration: "20 min",
+status: "available",
+
+objective:
+"Aprender a escolher o formato ideal de produto digital.",
+
+concept:
+"O formato do produto deve ser escolhido com base na transformação desejada e não na ferramenta utilizada.",
+
+framework: [
+"Função: qual problema será resolvido?",
+"Implementação: qual formato facilita a aplicação?",
+"Transformação: qual formato gera resultado mais rápido?"
+],
+
+prompt: `Analise a seguinte oportunidade:
+
+[OPORTUNIDADE]
+
+Com base nela indique:
+
+- Melhor formato de produto
+- Alternativas possíveis
+- Prós e contras
+- Complexidade de criação
+- Potencial de monetização
+
+Escolha o formato ideal e justifique.`,
+
+example:
+"Uma biblioteca de prompts pode ser mais eficiente do que um curso longo para resolver determinados problemas.",
+
+checklist: [
+"Analisei a transformação desejada",
+"Comparei diferentes formatos",
+"Escolhi o formato principal",
+"Defini a forma de entrega"
+],
+
+proTip:
+"Produtos menores e específicos normalmente validam mais rápido.",
+
+nextAction:
+"Na próxima aula vamos estruturar os módulos e entregáveis do produto."
+}
+
 ];
 
 export function getModule(id: string) {
