@@ -726,7 +726,7 @@ proTip:
 
 nextAction:
 "Na próxima aula vamos estruturar os módulos e entregáveis do produto."
-}
+},
 
 {
 id: "9",
