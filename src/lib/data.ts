@@ -728,6 +728,99 @@ nextAction:
 "Na próxima aula vamos estruturar os módulos e entregáveis do produto."
 }
 
+{
+id: "9",
+moduleId: "2",
+title: "Estruturando Módulos e Entregáveis",
+subtitle: "Transforme sua ideia em uma jornada organizada de aprendizado e execução.",
+duration: "22 min",
+status: "available",
+
+objective:
+"Aprender a organizar o produto em módulos, aulas, entregáveis e etapas claras para o cliente alcançar a transformação prometida.",
+
+concept:
+"Um produto digital forte não é apenas um monte de conteúdo. Ele é uma jornada. Cada módulo precisa levar o cliente de um ponto ao outro, reduzindo confusão e aumentando a sensação de progresso.",
+
+contentSections: [
+{
+title: "Produto bom tem caminho claro",
+content:
+"O cliente não quer apenas acessar materiais. Ele quer saber exatamente o que fazer primeiro, o que fazer depois e qual resultado esperar em cada etapa. Uma boa estrutura transforma conteúdo em experiência."
+},
+{
+title: "Módulos são etapas da transformação",
+content:
+"Cada módulo deve representar uma fase da jornada do cliente. Se o produto promete ajudar alguém a criar um negócio digital, os módulos precisam acompanhar a evolução: clareza, produto, página, venda e escala."
+},
+{
+title: "Entregáveis aumentam valor percebido",
+content:
+"Aulas explicam. Entregáveis ajudam a executar. Checklists, templates, prompts, planilhas, mapas e modelos prontos fazem o cliente sentir que está recebendo algo prático e aplicável."
+},
+{
+title: "Menos excesso, mais direção",
+content:
+"Um erro comum é colocar conteúdo demais. O objetivo não é impressionar com volume. O objetivo é conduzir o cliente até o resultado com o menor atrito possível."
+}
+],
+
+frameworkTitle: "Framework J.E.E.",
+frameworkDescription:
+"Use este método para organizar qualquer produto digital.",
+
+framework: [
+"Jornada: qual caminho o cliente precisa percorrer?",
+"Etapas: quais fases precisam existir para chegar ao resultado?",
+"Entregáveis: quais materiais ajudam o cliente a executar cada fase?"
+],
+
+promptTitle: "Arquiteto de Produto",
+
+prompt: `Atue como um especialista em criação de produtos digitais.
+
+Minha oportunidade validada é:
+
+[OPORTUNIDADE]
+
+A transformação prometida é:
+
+[TRANSFORMAÇÃO]
+
+Crie uma estrutura completa de produto com:
+
+- Nome dos módulos
+- Objetivo de cada módulo
+- Aulas recomendadas
+- Entregáveis de cada módulo
+- Prompts necessários
+- Checklists
+- Templates
+- Ordem ideal de consumo
+
+Organize tudo em uma jornada lógica do início ao resultado final.`,
+
+example:
+"Se o produto promete ajudar alguém a criar uma landing page que vende, os módulos poderiam ser: definição da oferta, copy, estrutura da página, design, prova social, checkout e publicação.",
+
+exercise:
+"Desenhe a jornada do seu produto em 5 a 8 etapas. Para cada etapa, defina pelo menos um entregável prático.",
+
+checklist: [
+"Defini a transformação principal do produto",
+"Quebrei a jornada em módulos",
+"Criei objetivos para cada módulo",
+"Listei entregáveis práticos",
+"Organizei a ordem ideal de consumo"
+],
+
+proTip:
+"Quanto mais clara for a jornada, menos suporte você precisará dar. Clareza reduz dúvida e aumenta conclusão.",
+
+nextAction:
+"Na próxima aula você vai aprender a criar bônus inteligentes que aumentam o valor percebido sem deixar o produto confuso."
+},
+  
 ];
 
 export function getModule(id: string) {
