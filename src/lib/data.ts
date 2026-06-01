@@ -17,7 +17,7 @@ export const modules = [
     lessons: 8,
     prompts: 25,
     progress: 0,
-    status: "Em breve",
+    status: "Disponível",
     icon: "📦",
   },
   {
