@@ -501,6 +501,91 @@ nextAction:
 "Na próxima aula você aprenderá como validar sua oportunidade antes de gastar tempo construindo qualquer produto."
 },
 
+  {
+id: "6",
+moduleId: "1",
+title: "Validando Antes de Construir",
+subtitle: "Evite perder semanas criando algo que ninguém quer comprar.",
+duration: "19 min",
+status: "available",
+
+objective:
+"Aprender a validar uma oportunidade antes de investir tempo, dinheiro e energia na construção do produto.",
+
+concept:
+"O maior erro de um criador digital é construir primeiro e validar depois. A validação existe para reduzir risco. Quanto antes você validar, menos tempo desperdiça criando algo sem demanda.",
+
+contentSections: [
+{
+title: "A armadilha da execução prematura",
+content:
+"Muitas pessoas passam semanas construindo sites, aplicativos, áreas de membros e automações sem saber se alguém realmente quer aquilo. A execução é importante, mas a validação vem antes."
+},
+{
+title: "Validação é coleta de evidências",
+content:
+"Validar não significa vender imediatamente. Significa coletar sinais de que existe interesse real. Comentários, respostas, cliques, mensagens e intenções de compra são evidências valiosas."
+},
+{
+title: "O poder das microvalidações",
+content:
+"Você não precisa lançar um produto completo para validar. Uma landing page simples, uma pesquisa ou uma conversa com potenciais clientes já podem revelar informações importantes."
+},
+{
+title: "Quanto mais cedo validar, melhor",
+content:
+"Corrigir uma ideia antes da construção custa horas. Corrigir uma ideia depois de semanas de desenvolvimento custa dinheiro, energia e motivação."
+}
+],
+
+frameworkTitle: "Framework P.O.I.C.",
+frameworkDescription:
+"Use este método para validar oportunidades antes de construir.",
+
+framework: [
+"Problema: existe uma dor real?",
+"Oferta: sua solução é clara e desejável?",
+"Interesse: existem sinais concretos de atenção?",
+"Confirmação: alguém demonstrou intenção real de compra?"
+],
+
+promptTitle: "Plano de Validação",
+
+prompt: `Crie um plano completo de validação para a seguinte ideia:
+
+[IDEIA]
+
+Inclua:
+
+* Pesquisa inicial
+* Entrevistas
+* Landing page
+* Teste de oferta
+* Métricas de validação
+* Critérios para seguir ou abandonar a ideia
+
+Monte um plano simples para executar em 7 dias.`,
+
+example:
+"Antes de criar um curso de IA para pequenos negócios, você pode criar uma página simples explicando a proposta e medir quantas pessoas demonstram interesse.",
+
+exercise:
+"Escolha sua melhor oportunidade e monte uma landing page simples com uma proposta de valor clara. Compartilhe com pelo menos 10 pessoas do público-alvo.",
+
+checklist: [
+"Defini o problema principal",
+"Criei uma proposta de valor",
+"Montei uma estratégia de validação",
+"Identifiquei métricas importantes",
+"Recebi feedback do mercado"
+],
+
+proTip:
+"Validação custa dias. Construir o produto errado custa meses.",
+
+nextAction:
+"Na próxima aula você vai reunir todas as informações coletadas e escolher a oportunidade com maior potencial de sucesso."
+},
 
 ];
 
