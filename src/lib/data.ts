@@ -410,6 +410,98 @@ nextAction:
 "Na próxima aula você vai descobrir qual nicho possui a melhor combinação entre interesse pessoal e potencial de mercado."
 },
 
+  {
+id: "5",
+moduleId: "1",
+title: "Escolhendo Seu Nicho Ideal",
+subtitle: "Descubra o ponto de encontro entre paixão, habilidade e mercado.",
+duration: "17 min",
+status: "available",
+
+objective:
+"Encontrar o nicho com maior potencial de crescimento, monetização e alinhamento pessoal.",
+
+concept:
+"Um nicho ideal não é apenas aquilo que você gosta. É a combinação entre interesse, conhecimento e demanda. Quando esses três fatores se encontram, as chances de sucesso aumentam drasticamente.",
+
+contentSections: [
+{
+title: "O erro de escolher apenas pela paixão",
+content:
+"Muitas pessoas escolhem um nicho apenas porque gostam do assunto. O problema é que paixão sem mercado gera frustração. Um nicho precisa ter pessoas buscando soluções e dispostas a pagar."
+},
+{
+title: "O erro de escolher apenas pelo dinheiro",
+content:
+"Também existe o erro contrário. Escolher algo apenas porque parece lucrativo. Sem interesse ou afinidade, a tendência é abandonar o projeto na primeira dificuldade."
+},
+{
+title: "A interseção perfeita",
+content:
+"Os melhores nichos normalmente estão no cruzamento entre aquilo que você conhece, aquilo que você gosta e aquilo que o mercado deseja comprar."
+},
+{
+title: "O teste da conversa infinita",
+content:
+"Se você consegue conversar sobre um assunto por horas, estudar sobre ele regularmente e ainda vê oportunidades de mercado, provavelmente encontrou um excelente candidato para nicho."
+}
+],
+
+frameworkTitle: "Framework I.C.D.",
+frameworkDescription:
+"Use este método para avaliar qualquer nicho antes de investir tempo nele.",
+
+framework: [
+"Interesse: você gosta do tema o suficiente para trabalhar nele por anos?",
+"Capacidade: você possui experiência, conhecimento ou facilidade de aprendizado?",
+"Demanda: existem pessoas buscando soluções e gastando dinheiro nesse mercado?",
+"Escalabilidade: esse nicho permite criar múltiplos produtos no futuro?"
+],
+
+promptTitle: "Scanner de Nichos",
+
+prompt: `Faça uma análise completa do meu perfil.
+
+Tenho experiência em:
+
+[EXPERIÊNCIAS]
+
+Tenho interesse em:
+
+[INTERESSES]
+
+Com base nisso identifique:
+
+* 10 nichos ideais
+* Potencial de monetização
+* Facilidade de entrada
+* Concorrência
+* Possíveis produtos digitais
+
+Crie uma tabela classificando do melhor para o pior nicho.`,
+
+example:
+"Uma pessoa com experiência em vendas, interesse por tecnologia e conhecimento em automação pode encontrar oportunidades em IA para pequenos negócios, CRM, WhatsApp e produtividade comercial.",
+
+exercise:
+"Liste 10 áreas que você domina ou possui interesse. Aplique o Framework I.C.D. e selecione os 3 nichos mais fortes.",
+
+checklist: [
+"Listei minhas experiências",
+"Listei meus interesses",
+"Avaliei a demanda dos nichos",
+"Comparei potencial de monetização",
+"Escolhi meu nicho principal"
+],
+
+proTip:
+"É mais fácil vencer em um nicho que você entende profundamente do que em um nicho que apenas parece lucrativo.",
+
+nextAction:
+"Na próxima aula você aprenderá como validar sua oportunidade antes de gastar tempo construindo qualquer produto."
+},
+
+
 ];
 
 export function getModule(id: string) {
