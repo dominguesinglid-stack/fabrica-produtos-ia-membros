@@ -587,6 +587,97 @@ nextAction:
 "Na próxima aula você vai reunir todas as informações coletadas e escolher a oportunidade com maior potencial de sucesso."
 },
 
+  {
+id: "7",
+moduleId: "1",
+title: "Escolhendo Sua Oportunidade Vencedora",
+subtitle: "Tome a decisão final e saia deste módulo com uma oportunidade validada.",
+duration: "22 min",
+status: "available",
+
+objective:
+"Selecionar a melhor oportunidade entre todas as ideias analisadas ao longo do módulo.",
+
+concept:
+"Empreendedores travam porque tentam escolher a ideia perfeita. A verdade é que a oportunidade vencedora não é a perfeita. É aquela que possui a melhor combinação entre demanda, urgência, monetização e capacidade de execução.",
+
+contentSections: [
+{
+title: "O perigo da análise infinita",
+content:
+"Muitas pessoas ficam presas analisando dezenas de possibilidades sem tomar uma decisão. Informação sem decisão não gera resultado. Neste momento você precisa escolher um caminho."
+},
+{
+title: "A melhor ideia nem sempre é a mais brilhante",
+content:
+"A oportunidade vencedora geralmente não é a mais criativa. Ela é a mais prática, mais validada e mais próxima de gerar resultado."
+},
+{
+title: "Critérios objetivos vencem emoções",
+content:
+"Quando você utiliza critérios claros de avaliação, reduz a influência da insegurança e toma decisões mais inteligentes."
+},
+{
+title: "Comprometimento gera clareza",
+content:
+"Depois que você escolhe uma oportunidade, o foco deixa de ser procurar ideias e passa a ser executar. A clareza aumenta quando existe comprometimento."
+}
+],
+
+frameworkTitle: "Matriz O.V.",
+frameworkDescription:
+"Use esta matriz para comparar suas oportunidades e escolher a vencedora.",
+
+framework: [
+"Demanda: existe procura real?",
+"Urgência: o problema precisa ser resolvido rapidamente?",
+"Monetização: as pessoas pagariam pela solução?",
+"Aquisição: é fácil encontrar clientes?",
+"Execução: você possui capacidade de desenvolver a solução?"
+],
+
+promptTitle: "Analisador de Oportunidades",
+
+prompt: `Analise as seguintes oportunidades:
+
+[LISTA DE OPORTUNIDADES]
+
+Crie uma tabela de pontuação de 1 a 10 para:
+
+* Demanda
+* Urgência
+* Monetização
+* Facilidade de aquisição
+* Facilidade de execução
+
+Depois:
+
+* Classifique da melhor para a pior
+* Justifique cada nota
+* Escolha a oportunidade vencedora
+* Explique os riscos e vantagens da escolha`,
+
+example:
+"Uma oportunidade com nota 8 em demanda, 9 em monetização e 8 em aquisição normalmente supera uma ideia criativa com alta complexidade e baixa validação.",
+
+exercise:
+"Liste suas 3 melhores oportunidades e aplique a Matriz O.V. Escolha apenas uma para seguir para o Módulo 2.",
+
+checklist: [
+"Comparei minhas oportunidades",
+"Utilizei critérios objetivos",
+"Analisei demanda e monetização",
+"Escolhi minha oportunidade principal",
+"Estou pronto para construir meu produto"
+],
+
+proTip:
+"Escolha a oportunidade que possui mais evidências de mercado, não a que parece mais emocionante.",
+
+nextAction:
+"Parabéns. Você concluiu o Módulo 1. Agora é hora de transformar sua oportunidade validada em um produto digital estruturado no Módulo 2."
+},
+
 ];
 
 export function getModule(id: string) {
