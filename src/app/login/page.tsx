@@ -29,11 +29,11 @@ export default function LoginPage() {
     }
 
     if (mode === "signup") {
-      setMessage("Cadastro criado. Verifique seu email, se a confirmação estiver ativada.");
-      return;
-    }
+  setMessage("Cadastro criado. Agora você já pode entrar.");
+  return;
+}
 
-    router.push("/dashboard");
+window.location.href = "/dashboard";
   }
 
   return (
