@@ -1,5 +1,7 @@
 "use client";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { supabase } from "@/lib/supabase";
 import { BookOpen, LogOut, Search, Sparkles, Trophy, FileText, Download, Award, Users, User, Settings, CreditCard } from "lucide-react";
 import { modules } from "@/lib/data";
 
@@ -13,6 +15,12 @@ const tools = [
 ];
 
 export default function DashboardPage() {
+  const router = useRouter();
+
+async function handleLogout() {
+  await supabase.auth.signOut();
+  router.push("/login");
+}
   return (
     <main className="min-h-screen bg-[#060914] text-white">
       <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_20%_0%,rgba(124,58,237,.35),transparent_30%),radial-gradient(circle_at_85%_15%,rgba(217,70,239,.22),transparent_30%),linear-gradient(180deg,#060914,#090d1d)]" />
@@ -24,7 +32,7 @@ export default function DashboardPage() {
           </div>
           <div className="flex items-center gap-3">
             <Link href="/perfil"><button className="hidden rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-bold text-slate-200 md:block">Meu perfil</button></Link>
-            <button className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-bold text-slate-200"><LogOut size={16} />Sair</button>
+            <button onClick={handleLogout} className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-bold text-slate-200"><LogOut size={16} />Sair</button>
           </div>
         </nav>
       </header>
