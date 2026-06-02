@@ -13,31 +13,30 @@ export default function LoginPage() {
   const [message, setMessage] = useState("");
 
   async function handleAuth() {
-    setLoading(true);
-    setMessage("");
+  setLoading(true);
+  setMessage("");
 
-    const result =
-      mode === "login"
-        ? await supabase.auth.signInWithPassword({ email, password })
-        : await supabase.auth.signUp({ email, password });
+  const result =
+    mode === "login"
+      ? await supabase.auth.signInWithPassword({ email, password })
+      : await supabase.auth.signUp({ email, password });
 
-    setLoading(false);
+  setLoading(false);
 
-    if (result.error) {
-  setMessage("Erro: " + result.error.message);
-  console.log(result.error);
-  return;
-}
-
-setMessage("Login realizado. Redirecionando...");
-
-    if (mode === "signup") {
-  setMessage("Cadastro criado. Agora você já pode entrar.");
-  return;
-}
-
-window.location.href = "/dashboard";
+  if (result.error) {
+    setMessage(result.error.message);
+    return;
   }
+
+  if (mode === "signup") {
+    setMessage(
+      "Cadastro criado. Verifique seu email, se a confirmação estiver ativada."
+    );
+    return;
+  }
+
+  router.push("/dashboard");
+}
 
   return (
     <main className="min-h-screen bg-[#060914] text-white">
