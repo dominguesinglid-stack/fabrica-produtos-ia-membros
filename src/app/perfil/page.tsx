@@ -1,9 +1,22 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, BookOpen, CheckCircle, Mail, Trophy, User, Zap } from "lucide-react";
+import { supabase } from "@/lib/supabase";
 
 export default function PerfilPage() {
+  const [email, setEmail] = useState("Carregando...");
+
+useEffect(() => {
+  async function loadUser() {
+    const { data } = await supabase.auth.getUser();
+    setEmail(data.user?.email || "Email não encontrado");
+  }
+
+  loadUser();
+}, []);
+  
   return (
     <main className="min-h-screen bg-[#060914] text-white">
       <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_20%_0%,rgba(124,58,237,.35),transparent_30%),radial-gradient(circle_at_85%_15%,rgba(217,70,239,.22),transparent_30%),linear-gradient(180deg,#060914,#090d1d)]" />
@@ -45,7 +58,7 @@ export default function PerfilPage() {
 
                 <div className="rounded-2xl bg-white/5 p-4">
                   <div className="mb-2 flex items-center gap-2 text-sm font-bold text-slate-400"><Mail size={16} />Email</div>
-                  <p className="text-lg font-black">aluno@email.com</p>
+                  <p className="text-lg font-black">{email}</p>
                 </div>
 
                 <div className="rounded-2xl bg-white/5 p-4">
