@@ -24,9 +24,12 @@ export default function LoginPage() {
     setLoading(false);
 
     if (result.error) {
-      setMessage(result.error.message);
-      return;
-    }
+  setMessage("Erro: " + result.error.message);
+  console.log(result.error);
+  return;
+}
+
+setMessage("Login realizado. Redirecionando...");
 
     if (mode === "signup") {
   setMessage("Cadastro criado. Agora você já pode entrar.");
